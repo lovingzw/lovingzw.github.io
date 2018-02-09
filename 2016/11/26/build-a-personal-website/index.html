@@ -453,7 +453,7 @@
 <li>.moe（二次元专用）</li>
 </ul>
 <p>.moe 域名是去年才上线的，注册空间很大。不过，缺点是在一些浏览器里可能不被解析。</p>
-<h2 id="选择注册商"><a href="#选择注册商" class="headerlink" title="选择注册商"></a>选择注册商</h2><p>如果不选择 cn 域名的话，去 <a href="https://www.godaddy.com/" target="_blank" rel="external">GoDaddy</a> 买。一般价格都是20刀左右，赶上打折有时能两三刀买到。<br>如果非要选择 cn 域名，投靠马云爸爸的怀抱吧。</p>
+<h2 id="选择注册商"><a href="#选择注册商" class="headerlink" title="选择注册商"></a>选择注册商</h2><p>如果不选择 cn 域名的话，去 <a href="https://www.godaddy.com/" target="_blank" rel="noopener">GoDaddy</a> 买。一般价格都是20刀左右，赶上打折有时能两三刀买到。<br>如果非要选择 cn 域名，投靠马云爸爸的怀抱吧。</p>
 <h1 id="用-Hexo-GitHub-建站"><a href="#用-Hexo-GitHub-建站" class="headerlink" title="用 Hexo+GitHub 建站"></a>用 Hexo+GitHub 建站</h1><p>个人使用的 Hexo 版本是 3.2.2，不同版本的配置可能会有所不同，但关键的步骤流程基本上是一致的。<br>在此，先简单说一下 Hexo+GitHub 是如何建站的：</p>
 <ul>
 <li>Hexo 作为模板在本地生成静态页面</li>
@@ -471,7 +471,7 @@
 <h3 id="安装-Hexo"><a href="#安装-Hexo" class="headerlink" title="安装 Hexo"></a>安装 Hexo</h3><p><code>sudo npm install -g hexo</code></p>
 <h3 id="初始化"><a href="#初始化" class="headerlink" title="初始化"></a>初始化</h3><p>在电脑用户名目录下新建文件夹，比如 blog。然后<br><code>cd blog</code><br><code>hexo init</code><br>ok，环境配置部分已经结束啦。</p>
 <h2 id="本地静态页面"><a href="#本地静态页面" class="headerlink" title="本地静态页面"></a>本地静态页面</h2><h3 id="生成静态页面"><a href="#生成静态页面" class="headerlink" title="生成静态页面"></a>生成静态页面</h3><p>在blog目录下输入命令行<br><code>hexo generate</code></p>
-<h3 id="本地启动"><a href="#本地启动" class="headerlink" title="本地启动"></a>本地启动</h3><p>进行文章预览<br><code>hexo server</code><br>这个时候，终端会给一个地址，一般来说是<a href="http://localhost:4000" target="_blank" rel="external">http://localhost:4000</a> ，复制进浏览器。<br>到这一步，浏览器页面上就有 Hexo 了。</p>
+<h3 id="本地启动"><a href="#本地启动" class="headerlink" title="本地启动"></a>本地启动</h3><p>进行文章预览<br><code>hexo server</code><br>这个时候，终端会给一个地址，一般来说是<a href="http://localhost:4000" target="_blank" rel="noopener">http://localhost:4000</a> ，复制进浏览器。<br>到这一步，浏览器页面上就有 Hexo 了。</p>
 <h2 id="配置-GitHub"><a href="#配置-GitHub" class="headerlink" title="配置 GitHub"></a>配置 GitHub</h2><p>新建 Repository。Repository Name 必须是<strong>github_name.github.io</strong>，因为以后连接的时候会匹配。</p>
 <h2 id="将本地-Hexo-连接到-GitHub"><a href="#将本地-Hexo-连接到-GitHub" class="headerlink" title="将本地 Hexo 连接到 GitHub"></a>将本地 Hexo 连接到 GitHub</h2><p>环境配置好了，本地也生成静态页面了，GitHub 远程库也有了。那么接下来就要把静态页面和 GitHub 远程库连接起来。<br>在 blog 目录下找到 <code>_config.yml</code> 文件。用 Sublime Text 编辑，或者在终端输入命令行<br><code>vim _config.yml</code><br>在文件的最底部，修改成：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">deploy:</div><div class="line">    type: git</div><div class="line">    repository: https://github.com/github_name/github_name.github.io.git</div><div class="line">    branch: master</div></pre></td></tr></table></figure></p>
 <p>然后执行命令<br><code>npm install hexo-deployer-git --save</code><br><code>hexo deploy</code><br>部署的过程中会提示输入 GitHub 账号密码，照做即可。当然也可以选择 SSH 的方式。<br>部署完毕后，在浏览器里输入 <a href="">http://yourname.github.io/</a>，网站建成！</p>
@@ -484,7 +484,7 @@
 </ul>
 <h2 id="在-GitHub-上绑定域名"><a href="#在-GitHub-上绑定域名" class="headerlink" title="在 GitHub 上绑定域名"></a>在 GitHub 上绑定域名</h2><p>在<code>/source</code>文件夹中新建一个文件，命名为<code>CNAME</code>，内容填入域名（比如<a href="http://katsura.me">katsura.me</a>。然后上传部署<br><code>hexo g</code><br><code>hexo d</code><br>好了！撒花！现在用买域名的钱，就建好了自己的个人网站：）</p>
 <h1 id="平时怎么用"><a href="#平时怎么用" class="headerlink" title="平时怎么用"></a>平时怎么用</h1><h2 id="常用命令"><a href="#常用命令" class="headerlink" title="常用命令"></a>常用命令</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">hexo new &quot;postName&quot; #新建文章</div><div class="line">hexo new page &quot;pageName&quot; #新建页面</div><div class="line">hexo generate #生成静态页面至public目录</div><div class="line">hexo server #开启预览访问端口（默认端口4000，&apos;ctrl + c&apos;关闭server）</div><div class="line">hexo deploy #将.deploy目录部署到GitHub</div><div class="line">hexo help  #查看帮助</div><div class="line">hexo version  #查看Hexo的版本</div></pre></td></tr></table></figure>
-<h2 id="关于主题"><a href="#关于主题" class="headerlink" title="关于主题"></a>关于主题</h2><p>Next 是个人非常喜欢的主题，现在的个人网站使用的就是 Next.Muse 主题。关于主题的配置，在作者的页面上有详细的教程：<a href="http://theme-next.iissnan.com" target="_blank" rel="external">Next | Elegent Theme for Hexo</a><br>个人推荐设置几个第三方服务：</p>
+<h2 id="关于主题"><a href="#关于主题" class="headerlink" title="关于主题"></a>关于主题</h2><p>Next 是个人非常喜欢的主题，现在的个人网站使用的就是 Next.Muse 主题。关于主题的配置，在作者的页面上有详细的教程：<a href="http://theme-next.iissnan.com" target="_blank" rel="noopener">Next | Elegent Theme for Hexo</a><br>个人推荐设置几个第三方服务：</p>
 <ul>
 <li>评论系统（Disqus 好看但是被墙，心痛）</li>
 <li>阅读统计</li>
@@ -507,9 +507,9 @@
 <li>把本地路径替换成远程链接</li>
 </ul>
 <h2 id="关于音乐"><a href="#关于音乐" class="headerlink" title="关于音乐"></a>关于音乐</h2><p>网易云音乐支持生成外链。在网页找到歌曲后，点击<code>生成外链</code>，复制代码到 md 文档中即可。</p>
-<h2 id="关于引用"><a href="#关于引用" class="headerlink" title="关于引用"></a>关于引用</h2><p><a href="https://hexo.io/docs/tag-plugins.html#Block-Quote" target="_blank" rel="external">Block Quote</a> 这里讲得很清楚。模板是：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">&#123;% blockquote [author[, source]] [link] [source_link_title] %&#125;</div><div class="line">content</div><div class="line">&#123;% endblockquote %&#125;</div></pre></td></tr></table></figure></p>
+<h2 id="关于引用"><a href="#关于引用" class="headerlink" title="关于引用"></a>关于引用</h2><p><a href="https://hexo.io/docs/tag-plugins.html#Block-Quote" target="_blank" rel="noopener">Block Quote</a> 这里讲得很清楚。模板是：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">&#123;% blockquote [author[, source]] [link] [source_link_title] %&#125;</div><div class="line">content</div><div class="line">&#123;% endblockquote %&#125;</div></pre></td></tr></table></figure></p>
 <h2 id="关于阅读全文"><a href="#关于阅读全文" class="headerlink" title="关于阅读全文"></a>关于阅读全文</h2><p>在文档中添加<br><code>&lt;!--more--&gt;</code><br>文章后面的内容就不会在首页显示。</p>
-<h2 id="写文流程"><a href="#写文流程" class="headerlink" title="写文流程"></a>写文流程</h2><p>每次新建文章后都要到到目录里找，有点麻烦。有一个改进的方法，以下是 Mac/Hexo 3+ 的版本。具体见<a href="https://notes.wanghao.work/2015-06-29-Hexo%E6%B7%BB%E5%8A%A0%E6%96%87%E7%AB%A0%E6%97%B6%E8%87%AA%E5%8A%A8%E6%89%93%E5%BC%80%E7%BC%96%E8%BE%91%E5%99%A8.html" target="_blank" rel="external">Hexo添加文章时自动打开编辑器</a></p>
+<h2 id="写文流程"><a href="#写文流程" class="headerlink" title="写文流程"></a>写文流程</h2><p>每次新建文章后都要到到目录里找，有点麻烦。有一个改进的方法，以下是 Mac/Hexo 3+ 的版本。具体见<a href="https://notes.wanghao.work/2015-06-29-Hexo%E6%B7%BB%E5%8A%A0%E6%96%87%E7%AB%A0%E6%97%B6%E8%87%AA%E5%8A%A8%E6%89%93%E5%BC%80%E7%BC%96%E8%BE%91%E5%99%A8.html" target="_blank" rel="noopener">Hexo添加文章时自动打开编辑器</a></p>
 <ul>
 <li>在博客根目录下新建 <code>/scripts</code> 目录，创建一个 <code>JavaScript</code> 文件（任意命名）</li>
 <li>在文件中写入：<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> exec = <span class="built_in">require</span>(<span class="string">'child_process'</span>).exec;</div><div class="line">hexo.on(<span class="string">'new'</span>, <span class="function"><span class="keyword">function</span>(<span class="params">data</span>)</span>&#123;</div><div class="line">    exec(<span class="string">'open -a "markdown编辑器绝对路径.app" '</span> + data.path);</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
@@ -523,7 +523,7 @@
 <li>输入以下三个命令部署<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">hexo clean</div><div class="line">hexo g</div><div class="line">hexo d</div></pre></td></tr></table></figure>
 </li>
 </ol>
-<h1 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h1><p><a href="http://baixin.io/2015/08/HEXO搭建个人博客/" target="_blank" rel="external">潘柏信的博客</a><br><a href="http://theme-next.iissnan.com" target="_blank" rel="external">Next | Elegent Theme for Hexo</a><br><a href="https://notes.wanghao.work/2015-06-29-Hexo%E6%B7%BB%E5%8A%A0%E6%96%87%E7%AB%A0%E6%97%B6%E8%87%AA%E5%8A%A8%E6%89%93%E5%BC%80%E7%BC%96%E8%BE%91%E5%99%A8.html" target="_blank" rel="external">Doublemine</a></p>
+<h1 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h1><p><a href="http://baixin.io/2015/08/HEXO搭建个人博客/" target="_blank" rel="noopener">潘柏信的博客</a><br><a href="http://theme-next.iissnan.com" target="_blank" rel="noopener">Next | Elegent Theme for Hexo</a><br><a href="https://notes.wanghao.work/2015-06-29-Hexo%E6%B7%BB%E5%8A%A0%E6%96%87%E7%AB%A0%E6%97%B6%E8%87%AA%E5%8A%A8%E6%89%93%E5%BC%80%E7%BC%96%E8%BE%91%E5%99%A8.html" target="_blank" rel="noopener">Doublemine</a></p>
 
       
     </div>
@@ -636,7 +636,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">10</span>
+              <span class="site-state-item-count">11</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
@@ -803,7 +803,7 @@
         <div class="copyright" >
   
   &copy;  2016 - 
-  <span itemprop="copyrightYear">2017</span>
+  <span itemprop="copyrightYear">2018</span>
   <span class="with-love">
     <i class="fa fa-heart"></i>
   </span>
