@@ -900,7 +900,7 @@ pre .javascript .function {
 .pagination .prev:hover,
 .pagination .next:hover,
 .pagination .page-number:hover {
-  border-top-color: #222;
+  border-top-color: #fecc89;
 }
 .pagination .space {
   padding: 0;
@@ -932,7 +932,7 @@ pre .javascript .function {
   .pagination .prev:hover,
   .pagination .next:hover,
   .pagination .page-number:hover {
-    border-bottom-color: #222;
+    border-bottom-color: #fecc89;
   }
 }
 .comments {
@@ -1682,7 +1682,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #acf28f;
+  background: #cf30ba;
 }
 .links-of-blogroll {
   font-size: 13px;
