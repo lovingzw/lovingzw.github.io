@@ -1323,7 +1323,7 @@ pre .javascript .function {
   display: none;
 }
 .posts-expand .post-title {
-  font-size: 26px;
+  font-size: 24px;
   text-align: center;
   word-break: break-word;
   font-weight: 400;
@@ -1360,7 +1360,7 @@ pre .javascript .function {
   transition-delay: 0s;
 }
 .posts-expand .post-title-link:hover::before {
-  visibility: visible;
+  visibility: hidden;
   -webkit-transform: scaleX(1);
   -moz-transform: scaleX(1);
   -ms-transform: scaleX(1);
@@ -1682,7 +1682,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #cf30ba;
+  background: #d11ae7;
 }
 .links-of-blogroll {
   font-size: 13px;
