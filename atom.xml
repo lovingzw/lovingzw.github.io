@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://katsura.me/"/>
-  <updated>2018-05-07T02:45:10.863Z</updated>
+  <updated>2018-05-14T20:44:06.397Z</updated>
   <id>https://katsura.me/</id>
   
   <author>
@@ -17,11 +17,32 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>tensorflow on spark</title>
+    <title>SSH 免密登录</title>
+    <link href="https://katsura.me/2018/05/15/passwordless-ssh/"/>
+    <id>https://katsura.me/2018/05/15/passwordless-ssh/</id>
+    <published>2018-05-14T20:28:02.000Z</published>
+    <updated>2018-05-14T20:44:06.397Z</updated>
+    
+    <content type="html"><![CDATA[<p>配置 Spark 集群时需要使用 SSH 免密登录，以方便以后的操作。</p><p>主机名为 master / slave1 / slave2，用户名均为 spark。</p><a id="more"></a><h3 id="修改-hosts-文件（所有主机）"><a href="#修改-hosts-文件（所有主机）" class="headerlink" title="修改 hosts 文件（所有主机）"></a>修改 hosts 文件（所有主机）</h3><p><code>sudo vi /etc/hosts</code><br>然后在 hosts 文件中的 localhost 行下面加入：<br><code>master_ip master salve1_ip slave1slave2_ip slave2</code></p><p>（有无同步方法？）</p><h3 id="安装-SSH"><a href="#安装-SSH" class="headerlink" title="安装 SSH"></a>安装 SSH</h3><h4 id="在所有主机上"><a href="#在所有主机上" class="headerlink" title="在所有主机上"></a>在所有主机上</h4><p><code>sudo apt-get install openssh-server</code><br><code>service ssh start</code></p><h4 id="在-master-上"><a href="#在-master-上" class="headerlink" title="在 master 上"></a>在 master 上</h4><p><code>ssh-keygen -t rsa</code><br>按两次回车</p><p><code>scp ~/.ssh/id_rsa.pub spark@slave1_ip:~/.ssh/id_rsa.pub.slave1</code><br><code>scp ~/.ssh/id_rsa.pub spark@slave2_ip:~/.ssh/id_rsa.pub.slave2</code></p><h4 id="在-slave-上"><a href="#在-slave-上" class="headerlink" title="在 slave 上"></a>在 slave 上</h4><p><code>cat ~/.ssh/id_rsa.pub* &gt;&gt; authorized_keys</code><br><code>sudo chmod 700 ~/.ssh</code><br><code>sudo chmod 600 ~/.ssh/authorized_keys</code></p><h3 id="验证能否免密登录"><a href="#验证能否免密登录" class="headerlink" title="验证能否免密登录"></a>验证能否免密登录</h3><p>在 master 上<br><code>ssh slave1</code></p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;配置 Spark 集群时需要使用 SSH 免密登录，以方便以后的操作。&lt;/p&gt;
+&lt;p&gt;主机名为 master / slave1 / slave2，用户名均为 spark。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="skills" scheme="https://katsura.me/categories/skills/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Tensorflow on Apache Spark</title>
     <link href="https://katsura.me/2018/05/07/tensorflow-on-spark/"/>
     <id>https://katsura.me/2018/05/07/tensorflow-on-spark/</id>
     <published>2018-05-07T02:42:06.000Z</published>
-    <updated>2018-05-07T02:45:10.863Z</updated>
+    <updated>2018-05-07T03:56:30.528Z</updated>
     
     <content type="html"><![CDATA[<h3 id="配置环境"><a href="#配置环境" class="headerlink" title="配置环境"></a>配置环境</h3><p>python2<br>spark<br>tensorflow<br>tensorframe<br>安装 tensorframe 加上<a href="https://github.com/apache/incubator-superset/issues/1256" target="_blank" rel="noopener">这个包</a><br><code>sudo apt-get install libsasl2-dev python-dev libldap2-dev libssl-dev</code></p>]]></content>
     
@@ -467,34 +488,6 @@
     
     
       <category term="博客" scheme="https://katsura.me/tags/%E5%8D%9A%E5%AE%A2/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>EVA</title>
-    <link href="https://katsura.me/2016/11/25/EVA/"/>
-    <id>https://katsura.me/2016/11/25/EVA/</id>
-    <published>2016-11-25T11:04:59.000Z</published>
-    <updated>2018-04-21T04:19:30.715Z</updated>
-    
-    <content type="html"><![CDATA[<p>自我觉醒与残酷现实</p><p><img src="/uploads/Ayanami%20Rei@Evangelion%201.11%20You%20are%20-not-%20alone.png" alt="Ayanami Rei@Evangelion 1.11 You are -not- alone"></p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;自我觉醒与残酷现实&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/uploads/Ayanami%20Rei@Evangelion%201.11%20You%20are%20-not-%20alone.png&quot; alt=&quot;Ayanami Rei@Evangelion 1.11 You
-      
-    
-    </summary>
-    
-      <category term="movies" scheme="https://katsura.me/categories/movies/"/>
-    
-    
-      <category term="日本" scheme="https://katsura.me/tags/%E6%97%A5%E6%9C%AC/"/>
-    
-      <category term="动画" scheme="https://katsura.me/tags/%E5%8A%A8%E7%94%BB/"/>
     
   </entry>
   
