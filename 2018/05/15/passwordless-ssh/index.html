@@ -113,7 +113,7 @@
 <meta property="og:site_name" content="Katsura">
 <meta property="og:description" content="配置 Spark 集群时需要使用 SSH 免密登录，以方便以后的操作。 主机名为 master / slave1 / slave2，用户名均为 spark（用户名一定要一致）。">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-05-14T20:52:04.887Z">
+<meta property="og:updated_time" content="2018-05-14T20:58:01.676Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="SSH 免密登录">
 <meta name="twitter:description" content="配置 Spark 集群时需要使用 SSH 免密登录，以方便以后的操作。 主机名为 master / slave1 / slave2，用户名均为 spark（用户名一定要一致）。">
@@ -445,7 +445,7 @@
 <p>主机名为 master / slave1 / slave2，<strong>用户名均为 spark（用户名一定要一致）</strong>。</p>
 <a id="more"></a>
 <h3 id="修改-hosts-文件（所有主机）"><a href="#修改-hosts-文件（所有主机）" class="headerlink" title="修改 hosts 文件（所有主机）"></a>修改 hosts 文件（所有主机）</h3><p><code>sudo vi /etc/hosts</code></p>
-<p>然后在 hosts 文件中的 localhost 行下面加入：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">master_ip master </span><br><span class="line">salve1_ip slave1</span><br><span class="line">slave2_ip slave2</span><br></pre></td></tr></table></figure></p>
+<p>然后在 hosts 文件中的 localhost 行下面加入：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">master_ip master </span><br><span class="line">slave1_ip slave1</span><br><span class="line">slave2_ip slave2</span><br></pre></td></tr></table></figure></p>
 <p>（有无同步方法？）</p>
 <h3 id="安装-SSH"><a href="#安装-SSH" class="headerlink" title="安装 SSH"></a>安装 SSH</h3><h4 id="在所有主机上"><a href="#在所有主机上" class="headerlink" title="在所有主机上"></a>在所有主机上</h4><p><code>sudo apt-get install openssh-server</code><br><code>service ssh start</code></p>
 <h4 id="在-master-上"><a href="#在-master-上" class="headerlink" title="在 master 上"></a>在 master 上</h4><p><code>ssh-keygen -t rsa</code><br>接着按两次回车</p>
