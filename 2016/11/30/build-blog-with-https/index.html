@@ -115,7 +115,7 @@
 <meta property="og:description" content="来呀 一起用HTTPS呀https 在商业网站得到广泛应用，于是又带起了个人博客也绑定 SSL 的风气。用 VPS 建个人主页加 SSL 证书比较容易，在 Let’s Encrypt 那里随便可以拿。虽然 GitHub Pages 本身是自带 https 的，但是因为 GitHub 没有开放给自定义域名使用，所以使用独立域名作为博客地址的时候又要费上一番周折。话说回来，用 GitHub 部署的都是">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="https://katsura.me/uploads/example.png">
-<meta property="og:updated_time" content="2018-04-21T04:09:10.207Z">
+<meta property="og:updated_time" content="2018-05-23T16:01:29.744Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="用 Cloudflare 开启 GitHub Pages 的 SSL (HTTPS)">
 <meta name="twitter:description" content="来呀 一起用HTTPS呀https 在商业网站得到广泛应用，于是又带起了个人博客也绑定 SSL 的风气。用 VPS 建个人主页加 SSL 证书比较容易，在 Let’s Encrypt 那里随便可以拿。虽然 GitHub Pages 本身是自带 https 的，但是因为 GitHub 没有开放给自定义域名使用，所以使用独立域名作为博客地址的时候又要费上一番周折。话说回来，用 GitHub 部署的都是">
@@ -448,7 +448,7 @@
 <h3 id="为什么用-Cloudflare"><a href="#为什么用-Cloudflare" class="headerlink" title="为什么用 Cloudflare"></a>为什么用 Cloudflare</h3><p>在此，要使用的是 Cloudflare 的免费 CDN。不仅免费，操作过程也十分简单。但是， Cloudflare 的免费 SSL 证书是通用的，也就是说，证书并不是发给特定域名的。所以安全性也不能保证太多。<br>但是，不管怎么说，安全性能提高一点是一点。格调也是如此，对吧？不用狡辩，我知道我说出了很多人的心声。</p>
 <h3 id="怎么用"><a href="#怎么用" class="headerlink" title="怎么用"></a>怎么用</h3><p>如果已经建好了 GitHub Pages，而且已经在使用独立域名，可以进行以下步骤：</p>
 <ol>
-<li>注册 Cloudflare 账号</li>
+<li>注册 <a href="https://www.cloudflare.com" target="_blank" rel="noopener">Cloudflare</a> 账号</li>
 <li>确认 GitHub Repository 里面有 <code>CNAME</code> 文件</li>
 <li>在 Cloudflare 上添加域名，比如<a href="https://katsura.me">Katsura.me</a></li>
 <li>用 Cloudflare 提供的 DNS，在域名运营商处修改</li>
