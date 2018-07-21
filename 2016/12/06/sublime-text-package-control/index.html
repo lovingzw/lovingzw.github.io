@@ -114,7 +114,7 @@
 <meta property="og:site_name" content="Katsura">
 <meta property="og:description" content="最近突然在 Sublime Text 3 中找不到 package control 了，按照官网的两种方法试图重新安装，都不显示。本来还想把 ST3 卸载重装，因为之前装了太多插件，主题的配置也花了很长时间，不想再折腾了。于是，在检查配置文件的时候，发现了问题所在。 在 ~/Application Support/Sublime Text 3/Packages/User/Preferences.s">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2016-12-08T05:04:05.000Z">
+<meta property="og:updated_time" content="2018-07-21T20:35:26.633Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Sublime Text 3 package control 不显示的问题">
 <meta name="twitter:description" content="最近突然在 Sublime Text 3 中找不到 package control 了，按照官网的两种方法试图重新安装，都不显示。本来还想把 ST3 卸载重装，因为之前装了太多插件，主题的配置也花了很长时间，不想再折腾了。于是，在检查配置文件的时候，发现了问题所在。 在 ~/Application Support/Sublime Text 3/Packages/User/Preferences.s">
@@ -443,7 +443,7 @@
 
       
         <p>最近突然在 Sublime Text 3 中找不到 package control 了，按照官网的两种方法试图重新安装，都不显示。本来还想把 ST3 卸载重装，因为之前装了太多插件，主题的配置也花了很长时间，不想再折腾了。于是，在检查配置文件的时候，发现了问题所在。</p>
-<p>在 <code>~/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings</code> 这个配置文件中，居然把 package control 禁用了。把 <code>Package Control</code> 那项删掉，保存重启 ST3 即可。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&quot;ignored_packages&quot;:</span><br><span class="line">[</span><br><span class="line">    &quot;Vintage&quot;,</span><br><span class="line">    &quot;Package Control&quot;</span><br><span class="line">],</span><br></pre></td></tr></table></figure></p>
+<p>在 <code>~/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings</code> 这个配置文件中，居然把 package control 禁用了。把 <code>Package Control</code> 那项删掉，保存重启 ST3 即可。<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">"ignored_packages":</span><br><span class="line">[</span><br><span class="line">    <span class="string">"Vintage"</span>,</span><br><span class="line">    <span class="string">"Package Control"</span></span><br><span class="line">],</span><br></pre></td></tr></table></figure></p>
 <p>于是又可以愉快地玩耍了。</p>
 
       
