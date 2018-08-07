@@ -114,7 +114,7 @@
 <meta property="og:site_name" content="Katsura">
 <meta property="og:description" content="定义数据类型定义变量Dim x As VariantDim y As Integer 定义数组Dim arr_widetable(4) As StringDim myArray(1 To 5, 5 To 15) 2行5列数组 数组元素赋值arr_widetable(1) = 234 输入输出创建输入框InputBox(string a, string b)a 在输入框中间显示作为提示，b 在标签页">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-08-07T15:57:55.430Z">
+<meta property="og:updated_time" content="2018-08-07T16:57:18.464Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="VBA 函数整理">
 <meta name="twitter:description" content="定义数据类型定义变量Dim x As VariantDim y As Integer 定义数组Dim arr_widetable(4) As StringDim myArray(1 To 5, 5 To 15) 2行5列数组 数组元素赋值arr_widetable(1) = 234 输入输出创建输入框InputBox(string a, string b)a 在输入框中间显示作为提示，b 在标签页">
@@ -453,7 +453,9 @@
 <h3 id="判断字符串中有无特定子字符串"><a href="#判断字符串中有无特定子字符串" class="headerlink" title="判断字符串中有无特定子字符串"></a>判断字符串中有无特定子字符串</h3><p>* 代表任何字符串</p>
 <ol>
 <li><code>a Like b*</code><br>功能：判断 b 是否与 a 的开头一致<br>例：<code>If &quot;Steve Jobs&quot; Like &quot;Steve&quot;*</code> – 返回 True</li>
-<li><code>a Like *b*</code><br>功能：判断 b 是否在 a 的中间<br>例： <code>If &quot;vba&quot; Like *&quot;b&quot;*</code> – 返回 True</li>
+<li><p><code>a Like *b*</code><br>功能：判断 b 是否在 a 的中间<br>例： <code>If &quot;vba&quot; Like *&quot;b&quot;*</code> – 返回 True</p>
+<a id="more"></a>
+</li>
 </ol>
 <h3 id="空格"><a href="#空格" class="headerlink" title="空格"></a>空格</h3><p><code>Space(n)</code><br>输出的是长度为 n 的连续空格</p>
 <h3 id="截取字符串"><a href="#截取字符串" class="headerlink" title="截取字符串"></a>截取字符串</h3><p><code>Left(string, n)</code>  从左起第n个字符开始取<br><code>Right(string, n)</code> 从右起第n个字符开始取<br><code>Mid(string, m, n)</code> 从左第m个字符开始取长度为n的子字符串</p>
@@ -477,9 +479,9 @@
 <h2 id="自建函数"><a href="#自建函数" class="headerlink" title="自建函数"></a>自建函数</h2><h3 id="构建函数"><a href="#构建函数" class="headerlink" title="构建函数"></a>构建函数</h3><figure class="highlight vb"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">Function</span> a()</span><br><span class="line">	anything</span><br><span class="line"><span class="keyword">End</span> <span class="keyword">Function</span></span><br></pre></td></tr></table></figure>
 <h3 id="调用函数"><a href="#调用函数" class="headerlink" title="调用函数"></a>调用函数</h3><ol>
 <li>直接输入函数名</li>
-<li><code>Call a()</code></li>
+<li><code>Call a()</code><h3 id="函数返回值"><a href="#函数返回值" class="headerlink" title="函数返回值"></a>函数返回值</h3>要有一个变量名与函数名一致，函数会返回同名变量。<figure class="highlight vb"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">Function</span> get_index(target, title_row, target_sheet)</span><br><span class="line">     get_index = insert_index</span><br><span class="line"><span class="keyword">End</span> <span class="keyword">Function</span></span><br></pre></td></tr></table></figure>
+</li>
 </ol>
-<h3 id="函数返回值"><a href="#函数返回值" class="headerlink" title="函数返回值"></a>函数返回值</h3><p>要有一个变量名与函数名一致，函数会返回同名变量。<br><figure class="highlight vb"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">Function</span> get_index(target, title_row, target_sheet)</span><br><span class="line">     get_index = insert_index</span><br><span class="line"><span class="keyword">End</span> <span class="keyword">Function</span></span><br></pre></td></tr></table></figure></p>
 <h3 id="例子"><a href="#例子" class="headerlink" title="例子"></a>例子</h3><p>功能：输入一个英文字母，得到它后面的第shift个字母。<br><figure class="highlight vb"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">Function</span> shift_char(<span class="built_in">char</span>, shift)</span><br><span class="line">	num = Range(<span class="built_in">char</span> &amp; <span class="number">1</span>).Column</span><br><span class="line">	num = num + shift</span><br><span class="line">	next_char = Split(Cells(<span class="number">1</span>, num).Address, <span class="string">"$"</span>)(<span class="number">1</span>)</span><br><span class="line">	get_next_char = next_char</span><br><span class="line"><span class="keyword">End</span> <span class="keyword">Function</span></span><br></pre></td></tr></table></figure></p>
 <h2 id="特殊方法"><a href="#特殊方法" class="headerlink" title="特殊方法"></a>特殊方法</h2><h3 id="迷你图"><a href="#迷你图" class="headerlink" title="迷你图"></a>迷你图</h3><p>将选定区域 area 中的数值做出迷你图。<br><code>ActiveCell.SparklineGroups.Item(1).Item(i - title_row).SourceData = area</code></p>
 <h3 id="清除剪贴板"><a href="#清除剪贴板" class="headerlink" title="清除剪贴板"></a>清除剪贴板</h3><p>运行宏后，可能会有大量内容在剪贴板上，但都是我们不需要的，可以清除。<br><code>Application.CutCopyMode = False</code></p>
