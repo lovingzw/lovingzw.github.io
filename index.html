@@ -446,13 +446,6 @@
 <h3 id="数组元素赋值"><a href="#数组元素赋值" class="headerlink" title="数组元素赋值"></a>数组元素赋值</h3><p><code>arr_widetable(1) = 234</code></p>
 <h2 id="输入输出"><a href="#输入输出" class="headerlink" title="输入输出"></a>输入输出</h2><h3 id="创建输入框"><a href="#创建输入框" class="headerlink" title="创建输入框"></a>创建输入框</h3><p><code>InputBox(string a, string b)</code><br>a 在输入框中间显示作为提示，b 在标签页中显示。</p>
 <h3 id="创建输出框"><a href="#创建输出框" class="headerlink" title="创建输出框"></a>创建输出框</h3><p><code>MsgBox()</code><br>填入要输出的内容</p>
-<h2 id="字符串处理"><a href="#字符串处理" class="headerlink" title="字符串处理"></a>字符串处理</h2><h3 id="其它数据类型转字符"><a href="#其它数据类型转字符" class="headerlink" title="其它数据类型转字符"></a>其它数据类型转字符</h3><p><code>str_a = Str(a)</code></p>
-<h3 id="替换字符串中的子字符串"><a href="#替换字符串中的子字符串" class="headerlink" title="替换字符串中的子字符串"></a>替换字符串中的子字符串</h3><p><code>target = Replace(&quot;W&quot; &amp; prev_week, Space(1), &quot;&quot;)</code><br>将字符串中的空格去掉</p>
-<h3 id="判断字符串中特定子字符串的位置"><a href="#判断字符串中特定子字符串的位置" class="headerlink" title="判断字符串中特定子字符串的位置"></a>判断字符串中特定子字符串的位置</h3><p><code>InStr(a, b)</code><br>如果 a 中有 b，则输出 b 在 a 中的位置。<br>可以用于判断字符串中有无特定子字符串。<br><code>If InStr(a, b) &gt; 0 Then</code></p>
-<h3 id="判断字符串中有无特定子字符串"><a href="#判断字符串中有无特定子字符串" class="headerlink" title="判断字符串中有无特定子字符串"></a>判断字符串中有无特定子字符串</h3><p>* 代表任何字符串</p>
-<ol>
-<li><code>a Like b*</code><br>功能：判断 b 是否与 a 的开头一致<br>例：<code>If &quot;Steve Jobs&quot; Like &quot;Steve&quot;*</code> – 返回 True</li>
-<li><p><code>a Like *b*</code><br>功能：判断 b 是否在 a 的中间<br>例： <code>If &quot;vba&quot; Like *&quot;b&quot;*</code> – 返回 True</p>
           <!--noindex-->
           <div class="post-more-link text-center">
             <a class="btn" href="/2018/08/07/VBA-APIs/#more" rel="contents">
