@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://katsura.me/"/>
-  <updated>2018-09-26T17:59:20.900Z</updated>
+  <updated>2018-10-29T17:22:37.522Z</updated>
   <id>https://katsura.me/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>おやすみなさい</title>
+    <link href="https://katsura.me/2018/10/30/%E3%81%8A%E3%82%84%E3%81%99%E3%81%BF%E3%81%AA%E3%81%95%E3%81%84/"/>
+    <id>https://katsura.me/2018/10/30/おやすみなさい/</id>
+    <published>2018-10-29T16:55:10.000Z</published>
+    <updated>2018-10-29T17:22:37.522Z</updated>
+    
+    <content type="html"><![CDATA[<p>北京干燥的空气给夜空又增添了透明感。疲惫的心也无意在办公室里与数据纠缠。</p><p>突然很想。也很想听柴田淳的歌，翻到这首，治愈也致郁。</p><blockquote><p>声を聞くだけで幸せになるの <br> <font color="#999"><br>只要听到声音就感到幸福 </font> </p><p>こんな私でも <br><font color="#999"><br>这样的我 </font> </p><p>魔法のような優しいあなたの声 <br><font color="#999"><br>你那如魔法般温柔的声音 </font> </p><p>今夜も思い出す <br><font color="#999"><br>今晚也会想起来的 </font> </p><p>柔らかな明かり灯し眠れば <br><font color="#999"><br>点亮柔和的灯光入眠 </font> </p><p>心地よい風が意識さらっていく… <br><font color="#999"><br>意识随宜人的清风飞去 </font> </p><footer><strong>柴田淳</strong><cite><a href="https://www.xiami.com/song/8GoBfCfefe2?spm=a1z1s.6659513.0.0.KgWQio" target="_blank" rel="noopener">「おやすみなさい。またあとで」</a></cite></footer></blockquote><blockquote><p>愛してるよ <br><font color="#999"><br>我爱你 </font> </p><p>夢の中で待ってて <br><font color="#999"><br>在梦里等着我 </font> </p><p>傷付いた羽根を癒やすのは <br><font color="#999"><br>能治愈那受伤的羽翼 </font> </p><p>今でもあなただけなの <br><font color="#999"><br>至今也只有你 </font> </p><p>今夜もまた会いたい <br><font color="#999"><br>今晚也想再见 </font> </p><p>初めてあなたと出逢えた日のこと <br><font color="#999"><br>与你吹相遇的那天 </font> </p><p>都会の片隅で起きた奇跡 <br><font color="#999"><br>在城市的角落里发生的奇迹 </font> </p><p>星が落ちてきたの <br><font color="#999"><br>仿佛连星星也从天而落 </font> </p><p>それぞれに過ぎてゆく毎日が <br><font color="#999"><br>即使过去每日各自过着生活 </font> </p><p>あの日からふたり引き離そうとも… <br><font color="#999"><br>即使从那天起两人便要分离 </font> </p><p>愛してるよ <br><font color="#999"><br>我爱你 </font> </p><p>あなたが誰といても <br><font color="#999"><br>无论你曾与谁在一起 </font> </p><p>離れても 時が過ぎても <br><font color="#999"><br>就算分别已久 </font> </p><p>心を許せた人は <br><font color="#999"><br>在心中的人 </font> </p><p>今もあなただけなの <br><font color="#999"><br>到现在也只有你 </font> </p><p>夢の中で待ってて <br><font color="#999"><br>在梦中等着我 </font> </p><p>目を閉じて今すぐ行くから <br><font color="#999"><br>闭上眼睛就能见到你了 </font> </p><p>誰より優しい声と <br><font color="#999"><br>比谁都要温柔的声音 </font> </p><p>愛しいその眼差しに <br><font color="#999"><br>和心爱的眼神 </font> </p><p>今夜もまた 会いたい <br><font color="#999"><br>在今晚也想见到 </font> </p></blockquote>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;北京干燥的空气给夜空又增添了透明感。疲惫的心也无意在办公室里与数据纠缠。&lt;/p&gt;
+&lt;p&gt;突然很想。也很想听柴田淳的歌，翻到这首，治愈也致郁。&lt;/p&gt;
+&lt;blockquote&gt;&lt;p&gt;声を聞くだけで幸せになるの &lt;br&gt; &lt;font color=&quot;#999&quot;&gt;&lt;br&gt;只要听到声
+      
+    
+    </summary>
+    
+      <category term="internal" scheme="https://katsura.me/categories/internal/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>VBA 函数整理</title>
@@ -457,31 +482,6 @@
     
     
       <category term="电影" scheme="https://katsura.me/tags/%E7%94%B5%E5%BD%B1/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Sublime Text 3 package control 不显示的问题</title>
-    <link href="https://katsura.me/2016/12/06/sublime-text-package-control/"/>
-    <id>https://katsura.me/2016/12/06/sublime-text-package-control/</id>
-    <published>2016-12-06T01:41:55.000Z</published>
-    <updated>2018-07-21T20:35:26.633Z</updated>
-    
-    <content type="html"><![CDATA[<p>最近突然在 Sublime Text 3 中找不到 package control 了，按照官网的两种方法试图重新安装，都不显示。本来还想把 ST3 卸载重装，因为之前装了太多插件，主题的配置也花了很长时间，不想再折腾了。于是，在检查配置文件的时候，发现了问题所在。</p><p>在 <code>~/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings</code> 这个配置文件中，居然把 package control 禁用了。把 <code>Package Control</code> 那项删掉，保存重启 ST3 即可。<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">"ignored_packages":</span><br><span class="line">[</span><br><span class="line">    <span class="string">"Vintage"</span>,</span><br><span class="line">    <span class="string">"Package Control"</span></span><br><span class="line">],</span><br></pre></td></tr></table></figure></p><p>于是又可以愉快地玩耍了。</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;最近突然在 Sublime Text 3 中找不到 package control 了，按照官网的两种方法试图重新安装，都不显示。本来还想把 ST3 卸载重装，因为之前装了太多插件，主题的配置也花了很长时间，不想再折腾了。于是，在检查配置文件的时候，发现了问题所在。&lt;/p&gt;
-      
-    
-    </summary>
-    
-      <category term="skills" scheme="https://katsura.me/categories/skills/"/>
-    
-    
-      <category term="编辑器" scheme="https://katsura.me/tags/%E7%BC%96%E8%BE%91%E5%99%A8/"/>
     
   </entry>
   
