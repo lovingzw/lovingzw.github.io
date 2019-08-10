@@ -429,6 +429,319 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://katsura.me/2018/05/15/passwordless-ssh/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Guizheng WANG">
+      <meta itemprop="description" content="春宵苦短">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Katsura">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/05/15/passwordless-ssh/" itemprop="url">
+                  SSH 免密登录
+                </a>
+              
+            
+          </h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2018-05-15 04:28:02" itemprop="dateCreated datePublished" datetime="2018-05-15T04:28:02+08:00">2018-05-15</time>
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">栏目</span>
+              
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing"><a href="/categories/skills/" itemprop="url" rel="index"><span itemprop="name">skills</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <p>配置 Spark 集群时需要使用 SSH 免密登录，以方便以后的操作。</p>
+<p>示例中，主机名为 master / slave1 / slave2，<strong>用户名均为 spark（或是其它一致的用户名）</strong>。</p>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2018/05/15/passwordless-ssh/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://katsura.me/2018/05/07/tensorflow-on-spark/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Guizheng WANG">
+      <meta itemprop="description" content="春宵苦短">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Katsura">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/05/07/tensorflow-on-spark/" itemprop="url">
+                  Tensorflow on Apache Spark
+                </a>
+              
+            
+          </h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2018-05-07 10:42:06" itemprop="dateCreated datePublished" datetime="2018-05-07T10:42:06+08:00">2018-05-07</time>
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">栏目</span>
+              
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing"><a href="/categories/skills/" itemprop="url" rel="index"><span itemprop="name">skills</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h3 id="配置环境"><a href="#配置环境" class="headerlink" title="配置环境"></a>配置环境</h3><p>python2<br>spark<br>tensorflow<br>tensorframe<br>安装 tensorframe 加上<a href="https://github.com/apache/incubator-superset/issues/1256" target="_blank" rel="noopener">这个包</a><br><code>sudo apt-get install libsasl2-dev python-dev libldap2-dev libssl-dev</code></p>
+
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="https://katsura.me/2018/04/28/anti-closure/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
@@ -687,7 +1000,7 @@
 
       
         
-          <center><br><img src="https://s1.ax2x.com/2018/07/17/q2uNO.jpg" width="30%"><br>双重陷阱<br></center>
+          <center><br><img src="https://i.loli.net/2019/08/11/OWDxFCnhJmf2iYX.jpg" width="30%"><br>双重陷阱<br></center>
 
 <blockquote><p>纳博科夫笔下契诃夫式的知识分子是这样的一类人：他集高贵情操和软弱无能于一身，这种情操到达人类所能及的最深层次，而同时他又无力将其理想与原则付诸行动，简直无能到了近乎荒谬的地步。他投身于道德的美善、人民的幸福、宇宙的安宁，但个人生活上却做不出任何有用的事情。他在模糊的乌托邦梦想中耗费着自己乡村的生命。他明知什么是好的，什么是值得追求的，但同时又越来越陷入平凡的泥淖。</p>
 <footer><strong>蒋方舟</strong><cite><a href="https://book.douban.com/subject/27074861" target="_blank" rel="noopener">《东京一年》</a></cite></footer></blockquote>
@@ -893,323 +1206,6 @@
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://katsura.me/2018/04/18/song-memories/">
-
-    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Guizheng WANG">
-      <meta itemprop="description" content="春宵苦短">
-      <meta itemprop="image" content="/images/avatar.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Katsura">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h2 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/04/18/song-memories/" itemprop="url">
-                  Songs & Memories
-                </a>
-              
-            
-          </h2>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-
-              
-                
-              
-
-              <time title="创建时间：2018-04-18 18:13:41" itemprop="dateCreated datePublished" datetime="2018-04-18T18:13:41+08:00">2018-04-18</time>
-            
-
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">栏目</span>
-              
-              
-                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing"><a href="/categories/internal/" itemprop="url" rel="index"><span itemprop="name">internal</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <p>某些歌总和某些记忆连结起来，每次听到这段旋律，闭上眼睛，那些画面就一次次地复现。<br>
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2018/04/18/song-memories/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </p></div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://katsura.me/2018/04/10/partysu/">
-
-    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Guizheng WANG">
-      <meta itemprop="description" content="春宵苦短">
-      <meta itemprop="image" content="/images/avatar.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Katsura">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h2 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/04/10/partysu/" itemprop="url">
-                  后现代的出路绝不是小清新
-                </a>
-              
-            
-          </h2>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-
-              
-                
-              
-
-              <time title="创建时间：2018-04-10 03:00:35" itemprop="dateCreated datePublished" datetime="2018-04-10T03:00:35+08:00">2018-04-10</time>
-            
-
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">栏目</span>
-              
-              
-                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing"><a href="/categories/external/" itemprop="url" rel="index"><span itemprop="name">external</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <p>不鸟万如一在 <a href="https://yitianshijie.net" target="_blank" rel="noopener">《一天世界》</a> 里曾经多次讨论过「小清新」式观念现在所面临的困境。</p>
-<h3 id="小清新是舒适的"><a href="#小清新是舒适的" class="headerlink" title="小清新是舒适的"></a>小清新是舒适的</h3><p>面对低俗但火的东西，比如今日头条，比如快手，小清新们是不会让它们真正进入自己的世界的。于是，他们的选择只有两种：要么洁身自好，将其完全隔绝；要么就用其存在的合理性来包容它，用一种温和的冷暴力处理。带有强度的事物，小清新们总是避之不及，任何事情都「刚刚好」就最好了。一如「做一个有趣的人」这句小清新的 cliché，消解了现实生活的强度。而且重要的是，是否有趣难以被传统的价值体系评判，成为有趣的人不需要强度，真是毫不费力。</p>
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2018/04/10/partysu/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
   </section>
 
   
@@ -1261,7 +1257,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">32</span>
+                    <span class="site-state-item-count">34</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
