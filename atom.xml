@@ -482,9 +482,9 @@
       <category term="movies" scheme="https://katsura.me/categories/movies/"/>
     
     
-      <category term="音乐" scheme="https://katsura.me/tags/%E9%9F%B3%E4%B9%90/"/>
-    
       <category term="电影" scheme="https://katsura.me/tags/%E7%94%B5%E5%BD%B1/"/>
+    
+      <category term="音乐" scheme="https://katsura.me/tags/%E9%9F%B3%E4%B9%90/"/>
     
   </entry>
   
