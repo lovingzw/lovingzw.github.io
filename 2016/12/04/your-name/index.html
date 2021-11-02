@@ -1,204 +1,60 @@
 <!DOCTYPE html>
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-<html class="theme-next muse use-motion" lang="zh-Hans">
+<html lang="zh-CN">
 <head>
-  <meta charset="UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2"/>
-<meta name="theme-color" content="#E97038">
-
-
-
-
-
-
-  
-  
-    
-    
-  <script src="/lib/pace/pace.min.js?v=1.0.2"></script>
-  <link href="/lib/pace/pace-theme-minimal.min.css?v=1.0.2" rel="stylesheet">
-
-
-
-
-
-
-
-<meta http-equiv="Cache-Control" content="no-transform" />
-<meta http-equiv="Cache-Control" content="no-siteapp" />
-
-
-
-  <meta name="google-site-verification" content="zQQixAHrxZR_qkErFASB28rb7YKLovS9Sp562dd0KEc" />
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
-
-
-
-
-  
-  
-  
-  
-
-  
-    
-    
-  
-
-  
-
-  
-    
-      
-    
-
-    
-  
-
-  
-    
-      
-    
-
-    
-  
-
-  
-    
-      
-    
-
-    
-  
-
-  
-    
-    
-    <link href="//fonts.googleapis.com/css?family=Pingfang SC:300,300italic,400,400italic,700,700italic|Pingfang SC:300,300italic,400,400italic,700,700italic|Optima:300,300italic,400,400italic,700,700italic|Menlo:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
-  
-
-
-
-
-
-
-<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
-
-<link href="/css/main.css?v=6.4.2" rel="stylesheet" type="text/css" />
-
-
-  <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon.ico?v=6.4.2">
-
-
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon.ico?v=6.4.2">
-
-
-  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon.ico?v=6.4.2">
-
-
-  <link rel="mask-icon" href="/images/favicon.ico?v=6.4.2" color="#E97038">
-
-
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.4.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon.ico">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon.ico">
+  <link rel="mask-icon" href="/images/favicon.ico" color="#222">
   <link rel="manifest" href="/images/manifest.json">
+  <meta name="msapplication-config" content="/images/browserconfig.xml">
+  <meta http-equiv="Cache-Control" content="no-transform">
+  <meta http-equiv="Cache-Control" content="no-siteapp">
+  <meta name="google-site-verification" content="zQQixAHrxZR_qkErFASB28rb7YKLovS9Sp562dd0KEc">
 
+<link rel="stylesheet" href="/css/main.css">
 
-  <meta name="msapplication-config" content="/images/browserconfig.xml" />
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Pingfang SC:300,300italic,400,400italic,700,700italic|Optima:300,300italic,400,400italic,700,700italic|Menlo:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/font-awesome@4/css/font-awesome.min.css">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="/lib/pace/pace-theme-minimal.min.css">
+  <script src="/lib/pace/pace.min.js"></script>
 
-
-
-
-
-
-
-<script type="text/javascript" id="hexo.configurations">
-  var NexT = window.NexT || {};
-  var CONFIG = {
-    root: '/',
-    scheme: 'Muse',
-    version: '6.4.2',
-    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":true,"onmobile":true},
-    fancybox: true,
-    fastclick: true,
-    lazyload: true,
-    tabs: true,
-    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
-    algolia: {
-      applicationID: 'IFD7M7UJQG',
-      apiKey: 'fb929aec8d5d6258f615b4f7d328e81e',
-      indexName: 'hexo-blog',
-      hits: {"per_page":10},
-      labels: {"input_placeholder":"Search for Posts","hits_empty":"「${query}」 是什么？能吃吗？","hits_stats":"${hits} results found in ${time} ms"}
-    }
-  };
-</script>
-
-
-  
-
-
-
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"katsura.me","root":"/","scheme":"Muse","version":"7.8.0","exturl":true,"sidebar":{"position":"right","display":"post","padding":18,"offset":20,"onmobile":true},"copycode":{"enable":true,"show_result":true,"style":"flat"},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":true,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"appID":"IFD7M7UJQG","apiKey":"fb929aec8d5d6258f615b4f7d328e81e","indexName":"hexo-blog","hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"「${query}」 是什么？能吃吗？","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+  </script>
 
   <meta name="description" content="今年夏天在日本上画的 《你的名字。》 最近大热。之前在电脑屏幕看完了诚哥的作品，现在有机会在电影院看，还是得捧场。在戏院换票，听到周围都在讨论这部片。以画面细节著称的诚哥，这次补上了剧情的短板，更加有了话题性。但是，观毕，我还是感受到了些许落差。我有点怀疑，不知道这部 《你的名字。》 是否可以满足影厅里满座观众半年的期待。">
-<meta name="keywords" content="日本,动画">
 <meta property="og:type" content="article">
 <meta property="og:title" content="《你的名字。》 终究是美中不足啊">
 <meta property="og:url" content="https://katsura.me/2016/12/04/your-name/index.html">
 <meta property="og:site_name" content="Katsura">
 <meta property="og:description" content="今年夏天在日本上画的 《你的名字。》 最近大热。之前在电脑屏幕看完了诚哥的作品，现在有机会在电影院看，还是得捧场。在戏院换票，听到周围都在讨论这部片。以画面细节著称的诚哥，这次补上了剧情的短板，更加有了话题性。但是，观毕，我还是感受到了些许落差。我有点怀疑，不知道这部 《你的名字。》 是否可以满足影厅里满座观众半年的期待。">
-<meta property="og:locale" content="zh-Hans">
+<meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://i.loli.net/2019/08/11/bNHLfzoDBS2QKyW.jpg">
 <meta property="og:image" content="https://i.loli.net/2019/08/11/qusPXzv2QriYnRc.jpg">
-<meta property="og:updated_time" content="2019-08-10T21:31:51.471Z">
+<meta property="article:published_time" content="2016-12-04T15:11:08.000Z">
+<meta property="article:modified_time" content="2019-08-10T21:31:51.471Z">
+<meta property="article:author" content="Katsura WANG">
+<meta property="article:tag" content="日本">
+<meta property="article:tag" content="动画">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="《你的名字。》 终究是美中不足啊">
-<meta name="twitter:description" content="今年夏天在日本上画的 《你的名字。》 最近大热。之前在电脑屏幕看完了诚哥的作品，现在有机会在电影院看，还是得捧场。在戏院换票，听到周围都在讨论这部片。以画面细节著称的诚哥，这次补上了剧情的短板，更加有了话题性。但是，观毕，我还是感受到了些许落差。我有点怀疑，不知道这部 《你的名字。》 是否可以满足影厅里满座观众半年的期待。">
 <meta name="twitter:image" content="https://i.loli.net/2019/08/11/bNHLfzoDBS2QKyW.jpg">
 
+<link rel="canonical" href="https://katsura.me/2016/12/04/your-name/">
 
 
-  <link rel="alternate" href="/atom.xml" title="Katsura" type="application/atom+xml" />
-
-
-
-
-  <link rel="canonical" href="https://katsura.me/2016/12/04/your-name/"/>
-
-
-
-<script type="text/javascript" id="page.configurations">
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
   CONFIG.page = {
     sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
   };
 </script>
 
@@ -208,324 +64,328 @@
 
 
 
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-87996179-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-87996179-1');
-</script>
-
-
-
-
 
 
   <noscript>
-  <style type="text/css">
-    .use-motion .motion-element,
-    .use-motion .brand,
-    .use-motion .menu-item,
-    .sidebar-inner,
-    .use-motion .post-block,
-    .use-motion .pagination,
-    .use-motion .comments,
-    .use-motion .post-header,
-    .use-motion .post-body,
-    .use-motion .collection-title { opacity: initial; }
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
 
-    .use-motion .logo,
-    .use-motion .site-title,
-    .use-motion .site-subtitle {
-      opacity: initial;
-      top: initial;
-    }
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
 
-    .use-motion {
-      .logo-line-before i { left: initial; }
-      .logo-line-after i { right: initial; }
-    }
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
   </style>
 </noscript>
 
-</head>
+<style>mjx-container[jax="SVG"] {
+  direction: ltr;
+}
 
-<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+mjx-container[jax="SVG"] > svg {
+  overflow: visible;
+}
 
-  
-  
-    
-  
+mjx-container[jax="SVG"][display="true"] {
+  display: block;
+  text-align: center;
+  margin: 1em 0;
+}
 
-  <div class="container sidebar-position-left page-post-detail">
+mjx-container[jax="SVG"][justify="left"] {
+  text-align: left;
+}
+
+mjx-container[jax="SVG"][justify="right"] {
+  text-align: right;
+}
+
+g[data-mml-node="merror"] > g {
+  fill: red;
+  stroke: red;
+}
+
+g[data-mml-node="merror"] > rect[data-background] {
+  fill: yellow;
+  stroke: none;
+}
+
+g[data-mml-node="mtable"] > line[data-line] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node="mtable"] > rect[data-frame] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node="mtable"] > .mjx-dashed {
+  stroke-dasharray: 140;
+}
+
+g[data-mml-node="mtable"] > .mjx-dotted {
+  stroke-linecap: round;
+  stroke-dasharray: 0,140;
+}
+
+g[data-mml-node="mtable"] > svg {
+  overflow: visible;
+}
+
+[jax="SVG"] mjx-tool {
+  display: inline-block;
+  position: relative;
+  width: 0;
+  height: 0;
+}
+
+[jax="SVG"] mjx-tool > mjx-tip {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+mjx-tool > mjx-tip {
+  display: inline-block;
+  padding: .2em;
+  border: 1px solid #888;
+  font-size: 70%;
+  background-color: #F8F8F8;
+  color: black;
+  box-shadow: 2px 2px 5px #AAAAAA;
+}
+
+g[data-mml-node="maction"][data-toggle] {
+  cursor: pointer;
+}
+
+mjx-status {
+  display: block;
+  position: fixed;
+  left: 1em;
+  bottom: 1em;
+  min-width: 25%;
+  padding: .2em .4em;
+  border: 1px solid #888;
+  font-size: 90%;
+  background-color: #F8F8F8;
+  color: black;
+}
+
+foreignObject[data-mjx-xml] {
+  font-family: initial;
+  line-height: normal;
+  overflow: visible;
+}
+
+.MathJax path {
+  stroke-width: 3;
+}
+
+mjx-container[display="true"] {
+  overflow: auto hidden;
+}
+
+mjx-container[display="true"] + br {
+  display: none;
+}
+</style></head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
     <div class="headband"></div>
 
-    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
-      <div class="header-inner"><div class="site-brand-wrapper">
-  <div class="site-meta custom-logo">
-    
-      <div class="site-meta-headline">
-        <a>
-          <img class="custom-logo-image" src="/images/favicon.ico"
-               alt="Katsura"/>
-        </a>
-      </div>
-    
-
-    <div class="custom-logo-site-title">
-      <a href="/" class="brand" rel="start">
-        <span class="logo-line-before"><i></i></span>
-        <span class="site-title">Katsura</span>
-        <span class="logo-line-after"><i></i></span>
-      </a>
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
     </div>
-    
-      
-        <h1 class="site-subtitle" itemprop="description">穿过无星黑夜的浪花而去</h1>
-      
-    
   </div>
 
-  <div class="site-nav-toggle">
-    <button aria-label="切换导航栏">
-      <span class="btn-bar"></span>
-      <span class="btn-bar"></span>
-      <span class="btn-bar"></span>
-    </button>
+  <div class="site-meta custom-logo">
+      <div class="site-meta-headline">
+        <a>
+          <img class="custom-logo-image" src="/uploads/logo.jpg" alt="Katsura">
+        </a>
+      </div>
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">Katsura</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">穿过无星黑夜的浪花而去</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
   </div>
 </div>
 
 
 
+
 <nav class="site-nav">
-  
-    <ul id="menu" class="menu">
-      
-        
-        
-        
-          
-          <li class="menu-item menu-item-about">
-    <a href="/about/" rel="section">
-      <i class="menu-item-icon fa fa-fw fa-user"></i> <br />关于</a>
+  <ul id="menu" class="menu">
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-fw fa-user"></i>关于</a>
+
   </li>
-        
-        
-        
-          
-          <li class="menu-item menu-item-skills">
-    <a href="/categories/skills" rel="section">
-      <i class="menu-item-icon fa fa-fw fa-gear"></i> <br />技术</a>
+        <li class="menu-item menu-item-skills">
+
+    <a href="/categories/skills" rel="section"><i class="fa fa-fw fa-gear"></i>技术</a>
+
   </li>
-        
-        
-        
-          
-          <li class="menu-item menu-item-movies">
-    <a href="/categories/movies" rel="section">
-      <i class="menu-item-icon fa fa-fw fa-video-camera"></i> <br />映画</a>
+        <li class="menu-item menu-item-movies">
+
+    <a href="/categories/movies" rel="section"><i class="fa fa-fw fa-video-camera"></i>映画</a>
+
   </li>
-        
-        
-        
-          
-          <li class="menu-item menu-item-external">
-    <a href="/categories/external" rel="section">
-      <i class="menu-item-icon fa fa-fw fa-quote-left"></i> <br />意见</a>
+        <li class="menu-item menu-item-external">
+
+    <a href="/categories/external" rel="section"><i class="fa fa-fw fa-quote-left"></i>意见</a>
+
   </li>
-        
-        
-        
-          
-          <li class="menu-item menu-item-internal">
-    <a href="/categories/internal" rel="section">
-      <i class="menu-item-icon fa fa-fw fa-asterisk"></i> <br />伽蓝</a>
+        <li class="menu-item menu-item-internal">
+
+    <a href="/categories/internal" rel="section"><i class="fa fa-fw fa-asterisk"></i>伽蓝</a>
+
   </li>
-        
-        
-        
-          
-          <li class="menu-item menu-item-archives">
-    <a href="/archives/" rel="section">
-      <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />归档</a>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>归档</a>
+
   </li>
-
-      
-      
-        <li class="menu-item menu-item-search">
-          
-            <a href="javascript:;" class="popup-trigger">
-          
-            
-              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />搜索</a>
-        </li>
-      
-    </ul>
-  
-
-  
-    
-
-  
-
-  
-    <div class="site-search">
-      
-  
-  <div class="algolia-popup popup search-popup">
-    <div class="algolia-search">
-      <div class="algolia-search-input-icon">
-        <i class="fa fa-search"></i>
-      </div>
-      <div class="algolia-search-input" id="algolia-search-input"></div>
-    </div>
-
-    <div class="algolia-results">
-      <div id="algolia-stats"></div>
-      <div id="algolia-hits"></div>
-      <div id="algolia-pagination" class="algolia-pagination"></div>
-    </div>
-
-    <span class="popup-btn-close">
-      <i class="fa fa-times-circle"></i>
-    </span>
-  </div>
-
-
-
-
-    </div>
-  
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
 </nav>
 
 
 
-  
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container"></div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div class="algolia-results">
+  <div id="algolia-stats"></div>
+  <div id="algolia-hits"></div>
+  <div id="algolia-pagination" class="algolia-pagination"></div>
+</div>
 
-
+      
+    </div>
+  </div>
 
 </div>
     </header>
 
     
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
 
 
-    <main id="main" class="main">
+    <main class="main">
       <div class="main-inner">
         <div class="content-wrap">
           
-          <div id="content" class="content">
+
+          <div class="content post posts-expand">
             
 
-  <div id="posts" class="posts-expand">
     
-
-  
-
   
   
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="https://katsura.me/2016/12/04/your-name/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpg">
       <meta itemprop="name" content="Katsura WANG">
       <meta itemprop="description" content="春宵苦短">
-      <meta itemprop="image" content="/images/avatar.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="Katsura">
     </span>
-
-    
       <header class="post-header">
-
-        
-        
-          <h2 class="post-title" itemprop="name headline">《你的名字。》 终究是美中不足啊
-              
-            
-          </h2>
-        
+        <h1 class="post-title" itemprop="name headline">
+          《你的名字。》 终究是美中不足啊
+        </h1>
 
         <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
+            <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
               </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-
-              
-                
-              
+              <span class="post-meta-item-text">发表于</span>
 
               <time title="创建时间：2016-12-04 23:11:08" itemprop="dateCreated datePublished" datetime="2016-12-04T23:11:08+08:00">2016-12-04</time>
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2019-08-11 05:31:51" itemprop="dateModified" datetime="2019-08-11T05:31:51+08:00">2019-08-11</time>
+              </span>
+            <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
               </span>
-              
-                <span class="post-meta-item-text">栏目</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/movies/" itemprop="url" rel="index"><span itemprop="name">movies</span></a></span>
-
-                
-                
-              
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/movies/" itemprop="url" rel="index"><span itemprop="name">movies</span></a>
+                </span>
             </span>
-          
 
           
-            
-          
-
-          
-          
-
-          
-            <span class="post-meta-divider">|</span>
-            <span class="post-meta-item-icon"
-            >
-            <i class="fa fa-eye"></i>
-             阅读次数： 
-            <span class="busuanzi-value" id="busuanzi_value_page_pv" ></span>
+            <span class="post-meta-item" title="阅读次数" id="busuanzi_container_page_pv" style="display: none;">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span id="busuanzi_value_page_pv"></span>
+            </span><br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-file-word-o"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>1.7k</span>
             </span>
-          
-
-          
-
-          
 
         </div>
       </header>
-    
 
     
     
@@ -533,324 +393,216 @@
     <div class="post-body" itemprop="articleBody">
 
       
-      
+        <p><img data-src="https://i.loli.net/2019/08/11/bNHLfzoDBS2QKyW.jpg" alt="your name 1.jpg"></p>
+<p>今年夏天在日本上画的 <span class="exturl" data-url="aHR0cHM6Ly9tb3ZpZS5kb3ViYW4uY29tL3N1YmplY3QvMjY2ODMyOTAv" title="https://movie.douban.com/subject/26683290/">《你的名字。》<i class="fa fa-external-link"></i></span> 最近大热。之前在电脑屏幕看完了诚哥的作品，现在有机会在电影院看，还是得捧场。在戏院换票，听到周围都在讨论这部片。以画面细节著称的诚哥，这次补上了剧情的短板，更加有了话题性。但是，观毕，我还是感受到了些许落差。我有点怀疑，不知道这部 <span class="exturl" data-url="aHR0cHM6Ly9tb3ZpZS5kb3ViYW4uY29tL3N1YmplY3QvMjY2ODMyOTAv" title="https://movie.douban.com/subject/26683290/">《你的名字。》<i class="fa fa-external-link"></i></span> 是否可以满足影厅里满座观众半年的期待。</p>
+<span id="more"></span>
 
-      
-        <p><img src="https://i.loli.net/2019/08/11/bNHLfzoDBS2QKyW.jpg" alt="your name 1.jpg"></p>
-<p>今年夏天在日本上画的 <a href="https://movie.douban.com/subject/26683290/" target="_blank" rel="noopener">《你的名字。》</a> 最近大热。之前在电脑屏幕看完了诚哥的作品，现在有机会在电影院看，还是得捧场。在戏院换票，听到周围都在讨论这部片。以画面细节著称的诚哥，这次补上了剧情的短板，更加有了话题性。但是，观毕，我还是感受到了些许落差。我有点怀疑，不知道这部 <a href="https://movie.douban.com/subject/26683290/" target="_blank" rel="noopener">《你的名字。》</a> 是否可以满足影厅里满座观众半年的期待。<br><a id="more"></a></p>
-<p>诚哥的前作，都有几个共同点：画面细腻，背景丰富，利用场景切换刻画情感，弱化剧情叙述，足控（喂）。在我们的印象里，诚哥的作品就如诗歌般情感满溢，而不是小说一样的机关算尽，所以看的时候只要找到共鸣就是一本满足。比如 <a href="https://movie.douban.com/subject/2043546/" target="_blank" rel="noopener">《秒速五厘米》</a>，多少人哭着要炸电车，而不会责怪剧情不完整。而突然有一天，有人讲：「新海诚会讲故事了」，你会想，新海诚岂不是要成神了？而看完 <a href="https://movie.douban.com/subject/26683290/" target="_blank" rel="noopener">《你的名字。》</a> ，你会发现，成神没有那么容易。</p>
+<p>诚哥的前作，都有几个共同点：画面细腻，背景丰富，利用场景切换刻画情感，弱化剧情叙述，足控（喂）。在我们的印象里，诚哥的作品就如诗歌般情感满溢，而不是小说一样的机关算尽，所以看的时候只要找到共鸣就是一本满足。比如 <span class="exturl" data-url="aHR0cHM6Ly9tb3ZpZS5kb3ViYW4uY29tL3N1YmplY3QvMjA0MzU0Ni8=" title="https://movie.douban.com/subject/2043546/">《秒速五厘米》<i class="fa fa-external-link"></i></span>，多少人哭着要炸电车，而不会责怪剧情不完整。而突然有一天，有人讲：「新海诚会讲故事了」，你会想，新海诚岂不是要成神了？而看完 <span class="exturl" data-url="aHR0cHM6Ly9tb3ZpZS5kb3ViYW4uY29tL3N1YmplY3QvMjY2ODMyOTAv" title="https://movie.douban.com/subject/26683290/">《你的名字。》<i class="fa fa-external-link"></i></span> ，你会发现，成神没有那么容易。</p>
 <p>在故事里，或许是因为梦境的模糊，或许是因为交换的时间差，有两个无法解开的结，令泷和三叶两人彷徨不已。对方的名字，明明是那么重要，却又一次次地遗忘；由于时间线的交错，明明彼此交换过身体，却又不相识。可是，「遗忘名字」的核心设定，会给观众在代入角色的时候带来困扰。在对心爱之人的身份构建中，名字是非常重要的一环。每个人在产生爱恋的时候，对方总会在心中画下一个深刻的印象。这个印象作为一个锚点，推动着我们在关系中不断前行。在旧时间线里，两个人的互动没有得到足够详细的讲述，我们甚至不知道两人是何时产生好感的。而在新时间线里，连对方的名字都未能想起，何谈一颦一笑，性格的可爱迷人，还有两人之间的那些小羁绊呢。于是那种似有若无的寻找，就变得虚无缥缈，只是因为追寻而探求根源，不是有了根源作为动力才去追寻。这与情感的构建过程恰是相反的。所以，很多人能体会泷和三叶二人的努力，知道这个故事的精巧，在代入角色和体会感情根源上却有点困难。</p>
 <p>情感的构建受到了剧情的阻碍，那么情感的表现就交由声优的演出和人物的描画了。虽然诚哥一改前作风格，不再倚重多种场景的切换来借景抒情，而是更加直接地对人物进行描画。比如三叶在山坡上见到彗星解体的瞬间，镜头的绕转，最后放大到三叶的瞳孔，见到绝境的震撼表露无遗。但是，人物的面部特写恰是动画所难以表现的，更不是诚哥所长。缺少了面部细节表情这个重要的「演技」，人物的情感又隔上了一层纱。所幸的是，神木隆之介和上白石萌音的优秀发挥，还是让观众领悟到了主角的所思所感。</p>
-<p>对比下 <a href="https://movie.douban.com/subject/25662329/" target="_blank" rel="noopener">《疯狂动物城》</a> 流畅的感情推进，真是痛心疾首…</p>
+<p>对比下 <span class="exturl" data-url="aHR0cHM6Ly9tb3ZpZS5kb3ViYW4uY29tL3N1YmplY3QvMjU2NjIzMjkv" title="https://movie.douban.com/subject/25662329/">《疯狂动物城》<i class="fa fa-external-link"></i></span> 流畅的感情推进，真是痛心疾首…</p>
 <p>不过，依然是有人流着泪看完，被感动得一塌糊涂的。这大概是因为，每个人对「命运红线的安排」以及「感情真挚的表演」都有自己倾向吧。两人最后的相遇，因为时间线相隔，就像是前世的因缘在今世再续，还是挺浪漫的。说起来，还是有两个地方让我感到触动。相传「黄昏之时」能见到不可见之人，作为日语「你是谁」的语源，二人在黄昏的短暂相见分离，确实揪人心弦。三叶跑去东京见泷却发现他不认识自己，那种失恋般的失落感让自己剪掉头发，心疼。</p>
-<p>总体上看来，<a href="https://movie.douban.com/subject/26683290/" target="_blank" rel="noopener">《你的名字。》</a> 依然是一部优秀的作品。每帧都如壁纸一般的画面，宏大又细致的背景设定，时间穿越故事的清晰讲述，RADWIMPS 如彗星般流光溢彩的<a href="http://music.163.com/#/album?id=34841090" target="_blank" rel="noopener">配乐</a>，寥寥数笔刻画配角的立体形象，这些都让这部动画足够优秀。「结」作为具象的发带承接时空，也作为抽象情感的纽带存在，这个双关真是令人佩服。只可惜情感的传达连接方面，的确有点遗憾。</p>
-<p>剧情复杂起来，节奏自然也加快了，小清新的唯美氛围终究不会是诚哥的终点。这也是有些人说「诚哥变了再也不是以前认识的诚哥」的原因。但我不会怀疑诚哥是不是变了，是不是因为要走商业化的路线而抛弃原来的风格。因为，其实可以很清晰地看到，动画的主题还是对距离感的探讨、对命中注定的追寻，诚哥还是那个温柔的宅男啊。在知道很多人看了 <a href="https://movie.douban.com/subject/2043546/" target="_blank" rel="noopener">《秒速五厘米》</a> 后被致郁后，他开始认真思考，如何更清晰地表达自己，而在 <a href="https://movie.douban.com/subject/26683290/" target="_blank" rel="noopener">《你的名字。》</a> 里他也做到了——那些被命运红线牵绊的人啊，就应该鼓起勇气伸手抓住幸福呀。最后的久别重逢，如果再不转头问，电车又要来了。<br><img src="https://i.loli.net/2019/08/11/qusPXzv2QriYnRc.jpg" alt="your name 2.jpg"></p>
-<p>详细的剧情分析看这篇影评吧：<a href="https://movie.douban.com/review/8080602/" target="_blank" rel="noopener">时结里的迷藏——你的名字</a></p>
+<p>总体上看来，<span class="exturl" data-url="aHR0cHM6Ly9tb3ZpZS5kb3ViYW4uY29tL3N1YmplY3QvMjY2ODMyOTAv" title="https://movie.douban.com/subject/26683290/">《你的名字。》<i class="fa fa-external-link"></i></span> 依然是一部优秀的作品。每帧都如壁纸一般的画面，宏大又细致的背景设定，时间穿越故事的清晰讲述，RADWIMPS 如彗星般流光溢彩的<span class="exturl" data-url="aHR0cDovL211c2ljLjE2My5jb20vIy9hbGJ1bT9pZD0zNDg0MTA5MA==" title="http://music.163.com/#/album?id=34841090">配乐<i class="fa fa-external-link"></i></span>，寥寥数笔刻画配角的立体形象，这些都让这部动画足够优秀。「结」作为具象的发带承接时空，也作为抽象情感的纽带存在，这个双关真是令人佩服。只可惜情感的传达连接方面，的确有点遗憾。</p>
+<p>剧情复杂起来，节奏自然也加快了，小清新的唯美氛围终究不会是诚哥的终点。这也是有些人说「诚哥变了再也不是以前认识的诚哥」的原因。但我不会怀疑诚哥是不是变了，是不是因为要走商业化的路线而抛弃原来的风格。因为，其实可以很清晰地看到，动画的主题还是对距离感的探讨、对命中注定的追寻，诚哥还是那个温柔的宅男啊。在知道很多人看了 <span class="exturl" data-url="aHR0cHM6Ly9tb3ZpZS5kb3ViYW4uY29tL3N1YmplY3QvMjA0MzU0Ni8=" title="https://movie.douban.com/subject/2043546/">《秒速五厘米》<i class="fa fa-external-link"></i></span> 后被致郁后，他开始认真思考，如何更清晰地表达自己，而在 <span class="exturl" data-url="aHR0cHM6Ly9tb3ZpZS5kb3ViYW4uY29tL3N1YmplY3QvMjY2ODMyOTAv" title="https://movie.douban.com/subject/26683290/">《你的名字。》<i class="fa fa-external-link"></i></span> 里他也做到了——那些被命运红线牵绊的人啊，就应该鼓起勇气伸手抓住幸福呀。最后的久别重逢，如果再不转头问，电车又要来了。<br><img data-src="https://i.loli.net/2019/08/11/qusPXzv2QriYnRc.jpg" alt="your name 2.jpg"></p>
+<p>详细的剧情分析看这篇影评吧：<span class="exturl" data-url="aHR0cHM6Ly9tb3ZpZS5kb3ViYW4uY29tL3Jldmlldy84MDgwNjAyLw==" title="https://movie.douban.com/review/8080602/">时结里的迷藏——你的名字<i class="fa fa-external-link"></i></span></p>
 
-      
     </div>
 
     
-
     
     
-    
 
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-        <div class="post-tags">
-          
-            <a href="/tags/日本/" rel="tag"># 日本</a>
-          
-            <a href="/tags/动画/" rel="tag"># 动画</a>
-          
-        </div>
-      
-
-      
-      
-      
-
-      
-        <div class="post-nav">
-          <div class="post-nav-next post-nav-item">
-            
-              <a href="/2016/12/01/sweet-soul/" rel="next" title="City-Pop 的甜蜜灵魂">
-                <i class="fa fa-chevron-left"></i> City-Pop 的甜蜜灵魂
-              </a>
-            
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/%E6%97%A5%E6%9C%AC/" rel="tag"># 日本</a>
+              <a href="/tags/%E5%8A%A8%E7%94%BB/" rel="tag"># 动画</a>
           </div>
 
-          <span class="post-nav-divider"></span>
-
-          <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2016/12/06/sublime-text-package-control/" rel="prev" title="Sublime Text 3 package control 不显示的问题">
-                Sublime Text 3 package control 不显示的问题 <i class="fa fa-chevron-right"></i>
-              </a>
-            
-          </div>
-        </div>
-      
-
-      
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-  </div>
-
-
-          </div>
-          
-
-  
-
-
-
-        </div>
         
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2016/12/01/sweet-soul/" rel="prev" title="City-Pop 的甜蜜灵魂">
+      <i class="fa fa-chevron-left"></i> City-Pop 的甜蜜灵魂
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/2016/12/06/sublime-text-package-control/" rel="next" title="Sublime Text 3 package control 不显示的问题">
+      Sublime Text 3 package control 不显示的问题 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
           
   
-  <div class="sidebar-toggle">
-    <div class="sidebar-toggle-line-wrap">
-      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
-      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
-      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
-    </div>
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
   </div>
 
-  <aside id="sidebar" class="sidebar">
-    
-      <div id="sidebar-dimmer"></div>
-    
+  <aside class="sidebar">
     <div class="sidebar-inner">
 
-      
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
 
-      
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+      </div>
+      <!--/noindex-->
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
-        <div class="site-overview">
-          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-            
-              <img class="site-author-image" itemprop="image"
-                src="/images/avatar.jpg"
-                alt="Katsura WANG" />
-            
-              <p class="site-author-name" itemprop="name">Katsura WANG</p>
-              <p class="site-description motion-element" itemprop="description">春宵苦短</p>
-          </div>
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="Katsura WANG"
+      src="/images/avatar.jpg">
+  <p class="site-author-name" itemprop="name">Katsura WANG</p>
+  <div class="site-description" itemprop="description">春宵苦短</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">32</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+        <span class="site-state-item-count">4</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+        <span class="site-state-item-count">18</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <span class="exturl" data-url="aHR0cHM6Ly93d3cuaW5zdGFncmFtLmNvbS9sb3Zpbmd6dw==" title="Instagram → https:&#x2F;&#x2F;www.instagram.com&#x2F;lovingzw"><i class="fa fa-fw fa-instagram"></i></span>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:wanggzh@katsura.me" title="E-Mail → mailto:wanggzh@katsura.me"><i class="fa fa-fw fa-envelope"></i></a>
+      </span>
+  </div>
+  <div class="cc-license motion-element" itemprop="license">
+    <span class="exturl cc-opacity" data-url="aHR0cHM6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LW5jLXNhLzQuMC9kZWVkLnpo"><img src="/images/cc-by-nc-sa.svg" alt="Creative Commons"></span>
+  </div>
 
-          
-            <nav class="site-state motion-element">
-              
-                <div class="site-state-item site-state-posts">
-                
-                  <a href="/archives/">
-                
-                    <span class="site-state-item-count">32</span>
-                    <span class="site-state-item-name">日志</span>
-                  </a>
-                </div>
-              
 
-              
-                
-                
-                <div class="site-state-item site-state-categories">
-                  <a href="/categories/index.html">
-                    
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                    <span class="site-state-item-count">4</span>
-                    <span class="site-state-item-name">分类</span>
-                  </a>
-                </div>
-              
+  <div class="links-of-blogroll motion-element">
+    <div class="links-of-blogroll-title">
+      <i class="fa fa-fw fa-link"></i>
+      Links
+    </div>
+    <ul class="links-of-blogroll-list">
+        <li class="links-of-blogroll-item">
+          <span class="exturl" data-url="aHR0cHM6Ly9vdGFraXNtLmNvbQ==" title="https:&#x2F;&#x2F;otakism.com">宅談</span>
+        </li>
+    </ul>
+  </div>
 
-              
-                
-                
-                <div class="site-state-item site-state-tags">
-                  <a href="/tags/index.html">
-                    
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                    <span class="site-state-item-count">18</span>
-                    <span class="site-state-item-name">标签</span>
-                  </a>
-                </div>
-              
-            </nav>
-          
-
-          
-            <div class="feed-link motion-element">
-              <a href="/atom.xml" rel="alternate">
-                <i class="fa fa-rss"></i>
-                RSS
-              </a>
-            </div>
-          
-
-          
-            <div class="links-of-author motion-element">
-              
-                <span class="links-of-author-item">
-                  <a href="https://www.instagram.com/lovingzw" target="_blank" title="Instagram" rel="external nofollow"><i class="fa fa-fw fa-instagram"></i>Instagram</a>
-                  
-                </span>
-              
-                <span class="links-of-author-item">
-                  <a href="mailto:wanggzh@katsura.me" target="_blank" title="E-Mail" rel="external nofollow"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
-                  
-                </span>
-              
-            </div>
-          
-
-          
-          
-            <div class="cc-license motion-element" itemprop="license">
-              <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" class="cc-opacity" target="_blank" rel="external nofollow">
-                <img src="/images/cc-by-nc-sa.svg" alt="Creative Commons" />
-              </a>
-            </div>
-          
-
-          
-          
-            <div class="links-of-blogroll motion-element links-of-blogroll-block">
-              <div class="links-of-blogroll-title">
-                <i class="fa  fa-fw fa-link"></i>
-                Links
-              </div>
-              <ul class="links-of-blogroll-list">
-                
-                  <li class="links-of-blogroll-item">
-                    <a href="https://otakism.com" title="宅談" target="_blank">宅談</a>
-                  </li>
-                
-              </ul>
-            </div>
-          
-
-          
-            
-          
-          
-
-        </div>
-      </section>
-
-      
-
-      
+      </div>
 
     </div>
   </aside>
+  <div id="sidebar-dimmer"></div>
 
 
-        
       </div>
     </main>
 
-    <footer id="footer" class="footer">
+    <footer class="footer">
       <div class="footer-inner">
-        <div class="copyright">&copy; 2016 – <span itemprop="copyrightYear">2021</span>
-  <span class="with-love" id="animate">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 2016 – 
+  <span itemprop="copyrightYear">2021</span>
+  <span class="with-love">
     <i class="fa fa-play"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">Katsura WANG</span>
-
-  
-
-  
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-area-chart"></i>
+    </span>
+    <span title="站点总字数">56k</span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-coffee"></i>
+    </span>
+    <span title="站点阅读时长">51 分钟</span>
 </div>
-
-
-  
-
-
-
-
-
-
-
-
-
+  <div class="powered-by">Made Possible by <span class="exturl theme-link" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & <span class="exturl theme-link" data-url="aHR0cHM6Ly9tdXNlLnRoZW1lLW5leHQub3Jn">NexT.Muse</span> 
+  </div>
 
         
 <div class="busuanzi-count">
   <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-
-  
-    <span class="site-uv" title="总访客量">
-      <i class="fa fa-user"></i>
-      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+    <span class="post-meta-item" id="busuanzi_container_site_uv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-user"></i>
+      </span>
+      <span class="site-uv" title="总访客量">
+        <span id="busuanzi_value_site_uv"></span>
+      </span>
     </span>
-  
-
-  
-    <span class="site-pv" title="总访问量">
-      <i class="fa fa-eye"></i>
-      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item" id="busuanzi_container_site_pv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-eye"></i>
+      </span>
+      <span class="site-pv" title="总访问量">
+        <span id="busuanzi_value_site_pv"></span>
+      </span>
     </span>
-  
 </div>
 
 
@@ -860,221 +612,62 @@
 
 
 
-
-        
       </div>
     </footer>
-
-    
-      <div class="back-to-top">
-        <i class="fa fa-arrow-up"></i>
-        
-          <span id="scrollpercent"><span>0</span>%</span>
-        
-      </div>
-    
-
-    
-	
-    
-
-    
   </div>
 
   
+  <script src="/lib/anime.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
+  <script src="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/lozad@1/dist/lozad.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
 
-<script type="text/javascript">
-  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
-    window.Promise = null;
-  }
-</script>
+<script src="/js/utils.js"></script>
 
-
-
-
-
-  
+<script src="/js/motion.js"></script>
 
 
+<script src="/js/schemes/muse.js"></script>
 
-  
 
-
+<script src="/js/next-boot.js"></script>
 
 
 
 
   
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
-  
-
-
-  
-
-
-  <script type="text/javascript" src="/js/src/utils.js?v=6.4.2"></script>
-
-  <script type="text/javascript" src="/js/src/motion.js?v=6.4.2"></script>
-
-
-
-  
-  
-
-  
-  <script type="text/javascript" src="/js/src/scrollspy.js?v=6.4.2"></script>
-<script type="text/javascript" src="/js/src/post-details.js?v=6.4.2"></script>
-
-
-
-  
-
-
-  <script type="text/javascript" src="/js/src/bootstrap.js?v=6.4.2"></script>
-
-
-
-  
-
-
-
-  
-
-
-
-
-
-
+  <script>
+    (function(){
+      var bp = document.createElement('script');
+      var curProtocol = window.location.protocol.split(':')[0];
+      bp.src = (curProtocol === 'https') ? 'https://zz.bdstatic.com/linksubmit/push.js' : 'http://push.zhanzhang.baidu.com/push.js';
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(bp, s);
+    })();
+  </script>
 
 
 
 
   
+<script src="//cdn.jsdelivr.net/npm/algoliasearch@4/dist/algoliasearch-lite.umd.js"></script>
+<script src="//cdn.jsdelivr.net/npm/instantsearch.js@4/dist/instantsearch.production.min.js"></script>
+<script src="/js/algolia-search.js"></script>
 
 
 
 
-  
-  
-  
-  <link rel="stylesheet" href="/lib/algolia-instant-search/instantsearch.min.css">
-
-  
-  
-  <script src="/lib/algolia-instant-search/instantsearch.min.js"></script>
-  
-
-  <script src="/js/src/algolia-search.js?v=6.4.2"></script>
 
 
 
-  
-
-  
-
-  
-<script>
-(function(){
-    var bp = document.createElement('script');
-    var curProtocol = window.location.protocol.split(':')[0];
-    if (curProtocol === 'https') {
-        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';        
-    }
-    else {
-        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
-    }
-    var s = document.getElementsByTagName("script")[0];
-    s.parentNode.insertBefore(bp, s);
-})();
-</script>
 
 
-  
-  
-
-  
-  
-
-  
-    
-      <script type="text/x-mathjax-config">
-    MathJax.Hub.Config({
-      tex2jax: {
-        inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
-        processEscapes: true,
-        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
-      },
-      TeX: {equationNumbers: { autoNumber: "AMS" }}
-    });
-</script>
-
-<script type="text/x-mathjax-config">
-    MathJax.Hub.Queue(function() {
-      var all = MathJax.Hub.getAllJax(), i;
-        for (i=0; i < all.length; i += 1) {
-          all[i].SourceElement().parentNode.className += ' has-jax';
-        }
-    });
-</script>
-<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
-
-    
-  
 
 
-  
-  
-
-  
-
-  
-  <script type="text/javascript" src="/js/src/js.cookie.js?v=6.4.2"></script>
-  <script type="text/javascript" src="/js/src/scroll-cookie.js?v=6.4.2"></script>
 
 
-  
 
   
 
