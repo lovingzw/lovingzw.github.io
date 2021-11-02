@@ -3,19 +3,27 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
 <meta name="theme-color" content="#222">
 <meta name="generator" content="Hexo 5.4.0">
-  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
-  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon.ico">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon.ico">
+  <link rel="mask-icon" href="/images/favicon.ico" color="#222">
+  <link rel="manifest" href="/images/manifest.json">
+  <meta name="msapplication-config" content="/images/browserconfig.xml">
+  <meta http-equiv="Cache-Control" content="no-transform">
+  <meta http-equiv="Cache-Control" content="no-siteapp">
+  <meta name="google-site-verification" content="zQQixAHrxZR_qkErFASB28rb7YKLovS9Sp562dd0KEc">
 
 
 
 
 
+  
+  
+  
 
 <script id="hexo-configurations">
     var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"katsura.me","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"appID":"IFD7M7UJQG","apiKey":"fb929aec8d5d6258f615b4f7d328e81e","indexName":"hexo-blog","hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+    var CONFIG = {"hostname":"katsura.me","root":"/","scheme":"Muse","version":"7.8.0","exturl":true,"sidebar":{"position":"right","display":"post","padding":18,"offset":20,"onmobile":true},"copycode":{"enable":true,"show_result":true,"style":"flat"},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":true,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"appID":"IFD7M7UJQG","apiKey":"fb929aec8d5d6258f615b4f7d328e81e","indexName":"hexo-blog","hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"「${query}」 是什么？能吃吗？","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":false,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
   <meta name="description" content="定义数据类型定义变量Dim x As VariantDim y As Integer 定义数组Dim arr_widetable(4) As StringDim myArray(1 To 5, 5 To 15) 2行5列数组 数组元素赋值arr_widetable(1) = 234  输入输出创建输入框InputBox(string a, string b)a 在输入框中间显示作为提示，b 在标签">
@@ -75,10 +83,10 @@
   </style>
 </noscript>
 
-<script>function loadCss(l){var d=document,h=d.head,s=d.createElement('link');s.rel='stylesheet';s.href=l;!function e(f){if (d.body)return f();setTimeout(function(){e(f)})}(function(){h.appendChild(s);});}loadCss('/style.css');</script></head>
+<script>function loadCss(l){var d=document,h=d.head,s=d.createElement('link');s.rel='stylesheet';s.href=l;!function e(f){if (d.body)return f();setTimeout(function(){e(f)})}(function(){h.appendChild(s);});}loadCss('/style.css');loadCss('//fonts.googleapis.com/css?family=Pingfang SC:300,300italic,400,400italic,700,700italic|Optima:300,300italic,400,400italic,700,700italic|Menlo:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext');loadCss('//cdn.jsdelivr.net/npm/font-awesome@4/css/font-awesome.min.css');loadCss('//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.css');</script><noscript><link rel="stylesheet" href="/style.css"><link rel="stylesheet" href="//fonts.googleapis.com/css?family=Pingfang SC:300,300italic,400,400italic,700,700italic|Optima:300,300italic,400,400italic,700,700italic|Menlo:300,300italic,400,400italic,700,700italic&amp;display=swap&amp;subset=latin,latin-ext"><link rel="stylesheet" href="//cdn.jsdelivr.net/npm/font-awesome@4/css/font-awesome.min.css"><link rel="stylesheet" href="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.css"></noscript></head>
 
 <body itemscope="" itemtype="http://schema.org/WebPage">
-  <div class="container use-motion">
+  <div class="container">
     <div class="headband"></div>
 
     <header class="header" itemscope="" itemtype="http://schema.org/WPHeader">
@@ -91,7 +99,12 @@
     </div>
   </div>
 
-  <div class="site-meta">
+  <div class="site-meta custom-logo">
+      <div class="site-meta-headline">
+        <a>
+          <img class="custom-logo-image" src="/uploads/logo.jpg" alt="Katsura">
+        </a>
+      </div>
 
     <a href="/" class="brand" rel="start">
       <span class="logo-line-before"><i></i></span>
@@ -103,6 +116,7 @@
 
   <div class="site-nav-right">
     <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
     </div>
   </div>
 </div>
@@ -112,9 +126,29 @@
 
 <nav class="site-nav">
   <ul id="menu" class="menu">
-        <li class="menu-item menu-item-home">
+        <li class="menu-item menu-item-about">
 
-    <a href="/" rel="section"><i class="fa fa-fw fa-home"></i>首页</a>
+    <a href="/about/" rel="section"><i class="fa fa-fw fa-user"></i>关于</a>
+
+  </li>
+        <li class="menu-item menu-item-skills">
+
+    <a href="/categories/skills" rel="section"><i class="fa fa-fw fa-gear"></i>技术</a>
+
+  </li>
+        <li class="menu-item menu-item-movies">
+
+    <a href="/categories/movies" rel="section"><i class="fa fa-fw fa-video-camera"></i>映画</a>
+
+  </li>
+        <li class="menu-item menu-item-external">
+
+    <a href="/categories/external" rel="section"><i class="fa fa-fw fa-quote-left"></i>意见</a>
+
+  </li>
+        <li class="menu-item menu-item-internal">
+
+    <a href="/categories/internal" rel="section"><i class="fa fa-fw fa-asterisk"></i>伽蓝</a>
 
   </li>
         <li class="menu-item menu-item-archives">
@@ -122,11 +156,35 @@
     <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>归档</a>
 
   </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
   </ul>
 </nav>
 
 
 
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container"></div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div class="algolia-results">
+  <div id="algolia-stats"></div>
+  <div id="algolia-hits"></div>
+  <div id="algolia-pagination" class="algolia-pagination"></div>
+</div>
+
+      
+    </div>
+  </div>
 
 </div>
     </header>
@@ -153,7 +211,7 @@
     <link itemprop="mainEntityOfPage" href="https://katsura.me/2018/08/07/VBA-APIs/">
 
     <span hidden="" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/avatar.jpg">
       <meta itemprop="name" content="Katsura WANG">
       <meta itemprop="description" content="春宵苦短">
     </span>
@@ -192,7 +250,14 @@
                 </span>
             </span>
 
-          <br>
+          
+            <span class="post-meta-item" title="阅读次数" id="busuanzi_container_page_pv" style="display: none;">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span id="busuanzi_value_page_pv"></span>
+            </span><br>
             <span class="post-meta-item" title="本文字数">
               <span class="post-meta-item-icon">
                 <i class="fa fa-file-word-o"></i>
@@ -273,7 +338,7 @@
 <h3 id="设置当前操作-PPT"><a href="#设置当前操作-PPT" class="headerlink" title="设置当前操作 PPT"></a>设置当前操作 PPT</h3><p><code>Set myPresentation = PowerPointApp.ActivePresentation</code></p>
 <h3 id="设置-PPT-页面样式"><a href="#设置-PPT-页面样式" class="headerlink" title="设置 PPT 页面样式"></a>设置 PPT 页面样式</h3><h4 id="取第一页-PPT-的样式"><a href="#取第一页-PPT-的样式" class="headerlink" title="取第一页 PPT 的样式"></a>取第一页 PPT 的样式</h4><p><code>Set pptLayout = PowerPointApp.ActivePresentation.Slides(1).CustomLayout</code><br><code>mySlide = myPresentation.Slides.Add(1, pptLayout)</code></p>
 <h4 id="新建只有标题的-PPT-页"><a href="#新建只有标题的-PPT-页" class="headerlink" title="新建只有标题的 PPT 页"></a>新建只有标题的 PPT 页</h4><p><code>mySlide = myPresentation.Slides.Add(1, 11) </code></p>
-<h3 id="将-Excel-内容复制到-PPT"><a href="#将-Excel-内容复制到-PPT" class="headerlink" title="将 Excel 内容复制到 PPT"></a>将 Excel 内容复制到 PPT</h3><p><code>MyRangeArray(x).Copy</code><br><code>mySlide.Shapes.PasteSpecial DataType:=1</code><br>如何选择 Datatype 参见<a target="_blank" rel="noopener" href="https://www.thespreadsheetguru.com/blog/2014/3/17/copy-paste-an-excel-range-into-powerpoint-with-vba">这个链接</a></p>
+<h3 id="将-Excel-内容复制到-PPT"><a href="#将-Excel-内容复制到-PPT" class="headerlink" title="将 Excel 内容复制到 PPT"></a>将 Excel 内容复制到 PPT</h3><p><code>MyRangeArray(x).Copy</code><br><code>mySlide.Shapes.PasteSpecial DataType:=1</code><br>如何选择 Datatype 参见<span class="exturl" data-url="aHR0cHM6Ly93d3cudGhlc3ByZWFkc2hlZXRndXJ1LmNvbS9ibG9nLzIwMTQvMy8xNy9jb3B5LXBhc3RlLWFuLWV4Y2VsLXJhbmdlLWludG8tcG93ZXJwb2ludC13aXRoLXZiYQ==" title="https://www.thespreadsheetguru.com/blog/2014/3/17/copy-paste-an-excel-range-into-powerpoint-with-vba">这个链接<i class="fa fa-external-link"></i></span></p>
 <h3 id="移动、放缩对象"><a href="#移动、放缩对象" class="headerlink" title="移动、放缩对象"></a>移动、放缩对象</h3><figure class="highlight vb"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">Set</span> myShape = PowerPointApp.ActiveWindow.Selection.ShapeRange <span class="comment">'取最新添加的对象</span></span><br><span class="line">myShape.Width = SlideWidth - <span class="number">100</span>  <span class="comment">'宽度为页面宽度 - 100</span></span><br><span class="line">myShape.Left = (.SlideWidth \ <span class="number">2</span>) - (myShape.Width \ <span class="number">2</span>)  <span class="comment">'居中</span></span><br><span class="line">myShape.Top = <span class="number">90</span>  <span class="comment">'设置垂直位置</span></span><br></pre></td></tr></tbody></table></figure>
 <h3 id="常用"><a href="#常用" class="headerlink" title="常用"></a>常用</h3><p><code>PowerPointApp.Visible = True</code><br><code>PowerPointApp.Activate</code><br>加到最后确保 VBA 生效</p>
 
@@ -314,27 +379,7 @@
           </div>
           
 
-<script>
-  window.addEventListener('tabs:register', () => {
-    let { activeClass } = CONFIG.comments;
-    if (CONFIG.comments.storage) {
-      activeClass = localStorage.getItem('comments_active') || activeClass;
-    }
-    if (activeClass) {
-      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
-      if (activeTab) {
-        activeTab.click();
-      }
-    }
-  });
-  if (CONFIG.comments.storage) {
-    window.addEventListener('tabs:click', event => {
-      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
-      let commentClass = event.target.classList[1];
-      localStorage.setItem('comments_active', commentClass);
-    });
-  }
-</script>
+
 
         </div>
           
@@ -365,6 +410,7 @@
 
       <div class="site-overview-wrap sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="Katsura WANG" src="/images/avatar.jpg">
   <p class="site-author-name" itemprop="name">Katsura WANG</p>
   <div class="site-description" itemprop="description">春宵苦短</div>
 </div>
@@ -389,8 +435,30 @@
       </div>
   </nav>
 </div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <span class="exturl" data-url="aHR0cHM6Ly93d3cuaW5zdGFncmFtLmNvbS9sb3Zpbmd6dw==" title="Instagram → https://www.instagram.com/lovingzw"><i class="fa fa-fw fa-instagram"></i></span>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:wanggzh@katsura.me" title="E-Mail → mailto:wanggzh@katsura.me"><i class="fa fa-fw fa-envelope"></i></a>
+      </span>
+  </div>
+  <div class="cc-license motion-element" itemprop="license">
+    <span class="exturl cc-opacity" data-url="aHR0cHM6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LW5jLXNhLzQuMC9kZWVkLnpo"><img src="/images/cc-by-nc-sa.svg" alt="Creative Commons"></span>
+  </div>
 
 
+  <div class="links-of-blogroll motion-element">
+    <div class="links-of-blogroll-title">
+      <i class="fa fa-fw fa-link"></i>
+      Links
+    </div>
+    <ul class="links-of-blogroll-list">
+        <li class="links-of-blogroll-item">
+          <span class="exturl" data-url="aHR0cHM6Ly9vdGFraXNtLmNvbQ==" title="https://otakism.com">宅談</span>
+        </li>
+    </ul>
+  </div>
 
       </div>
 
@@ -410,10 +478,10 @@
 
 <div class="copyright">
   
-  © 
+  © 2016 – 
   <span itemprop="copyrightYear">2021</span>
   <span class="with-love">
-    <i class="fa fa-user"></i>
+    <i class="fa fa-play"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">Katsura WANG</span>
     <span class="post-meta-divider">|</span>
@@ -427,10 +495,30 @@
     </span>
     <span title="站点阅读时长">51 分钟</span>
 </div>
-  <div class="powered-by">Made Possible by <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> &amp; <a href="https://muse.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a> 
+  <div class="powered-by">Made Possible by <span class="exturl theme-link" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> &amp; <span class="exturl theme-link" data-url="aHR0cHM6Ly9tdXNlLnRoZW1lLW5leHQub3Jn">NexT.Muse</span> 
   </div>
 
         
+<div class="busuanzi-count">
+  <script async="" src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    <span class="post-meta-item" id="busuanzi_container_site_uv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-user"></i>
+      </span>
+      <span class="site-uv" title="总访客量">
+        <span id="busuanzi_value_site_uv"></span>
+      </span>
+    </span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item" id="busuanzi_container_site_pv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-eye"></i>
+      </span>
+      <span class="site-pv" title="总访问量">
+        <span id="busuanzi_value_site_pv"></span>
+      </span>
+    </span>
+</div>
 
 
 
@@ -445,26 +533,9 @@
 
   
   
-  
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-
+  <script src="//cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
+  <script src="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/lozad@1/dist/lozad.min.js"></script>
 
 
 
@@ -478,9 +549,62 @@
 
 
   
+  
+
+
+
+
+  
+<script src="//cdn.jsdelivr.net/npm/algoliasearch@4/dist/algoliasearch-lite.umd.js"></script>
+<script src="//cdn.jsdelivr.net/npm/instantsearch.js@4/dist/instantsearch.production.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
 
   
 
 
 
-<script src="/bundle.js"></script></body></html>
+<script src="/bundle.js"></script><script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+;
+
+    (function(){
+      var bp = document.createElement('script');
+      var curProtocol = window.location.protocol.split(':')[0];
+      bp.src = (curProtocol === 'https') ? 'https://zz.bdstatic.com/linksubmit/push.js' : 'http://push.zhanzhang.baidu.com/push.js';
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(bp, s);
+    })();
+  </script></body></html>
